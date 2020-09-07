@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+body::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:50%;
+    background: linear-gradient(180deg, rgba(237,242,242,1) 0%, rgba(0,0,0,1) 0%);
+    z-index:-1;
+    border-bottom-right-radius: 100%;
+    box-shadow:2px 2px 20px rgb(0,0,0,.6)
+}
+.siscor-game {
+    text-align: center;
+}
+.container {
+    display:inline-block;
+}
+.header-container {
+    border:5px solid rgb(255,255,255);
+    width:300px;
+    margin-top:2rem;
+    border-radius:5px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+}
+span {
+    font-size:18px;
+    line-height:40px;
+}
+.user {
+    background: linear-gradient(180deg, rgba(166,21,179,1) 0%, rgba(255,29,0,1) 100%);
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:30%
+}
+.computer {
+    background: linear-gradient(180deg, rgba(166,21,179,1) 0%, rgba(255,29,0,1) 100%);
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    width:30%;
+}
+.player {
+    margin:.5rem
+}
+.cop {
+    margin:.5rem;
+}
+.btn {
+    background:none;
+    border:5px solid white;
+    border-radius:50%;
+    color:rgb(229, 245, 2);
+    font-size:60px;
+    padding:.2rem;
+    margin:.5rem;
+    cursor: pointer;
+}
+.footer {
+    position:absolute;
+    bottom:10px;
+    left:20%;
+    right:20%;
+    top:50%;
+    border:5px solid rgb(0,0,255,.5);
+    text-align:center;
+}
+.result {
+    font-size:60px;
+    margin-bottom:2rem;
+}
+p {
+    font-weight:600;
+    text-transform: capitalize;
+    font-size:30px;
+}
+.fas {
+    margin:1rem;
+}
+@media screen and (max-width:600px) {
+    .btn {
+        font-size:40px;
+    }
+    p {
+        font-size:20px
+    }
+}
